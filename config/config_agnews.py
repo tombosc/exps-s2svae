@@ -1,0 +1,20 @@
+params={
+    'enc_type': 'lstm',
+    'dec_type': 'lstm',
+    'pred_linear_bias': True,
+    'nz': 16,
+    'ni': 200,
+    'enc_nh': 512,
+    'dec_nh': 512,
+    'dec_dropout_in': 0.5,
+    'dec_dropout_out': 0.5,
+    'dec_dropout': 0.5,  # for unigram decoders
+    'batch_size': 64,
+    'epochs': 200,
+    'test_nepoch': 5,
+    'train_data': 'datasets/ag_news/train.txt',
+    'val_data': 'datasets/ag_news/valid.txt',
+    'test_data': 'datasets/ag_news/test.txt',
+    'vocab_file': 'datasets/ag_news/vocab.txt',
+    "label": True,
+}
