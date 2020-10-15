@@ -1,13 +1,13 @@
 """ Print tables showing semi-supervised learning performance.
 """
 import argparse
-from collections import Counter
-from pool_results_fewshots import (
+from pool_results import (
     df_from_pickle, rename_colnames_values_for_print
 )
 from modules.hyperparameters import all_hp_except_seed, check_correct_groupby
 import pandas as pd
 import numpy as np
+
 
 def flatten(df):
     df.columns = ['_'.join(col).strip('_') for col in df.columns.values]
